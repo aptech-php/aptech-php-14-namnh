@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+
+<body>
+  <!-- <div id="js-div" style="height:100px;background-color:lightblue;display:none;"></div>
+
+  <button onclick="anHienDiv()">An Hien Div</button>
+  <script src="./script.js"></script> -->
+
+
+  <!-- <h1 id="js-h1" class="sun">Nu</h1>
+  <h3 id="js-h3" class="sun">Hello</h3>
+   -->
+
+  <div id="js-h1" class="container row col-12"></div>
+  <button onclick="doiChuH1()">Doi Chu</button>
+
+
+  <script>
+    function doiChuH1() {
+      // var def = document.getElementById('js-h1');
+      // def.innerHTML = 'Nam';
+      // var abc = document.getElementById('js-h3');
+      // abc.innerHTML = 'Hello World';
+      // var nhieuClass = document.getElementsByClassName('sun');
+      // console.log(nhieuClass);
+      // nhieuClass.innerHTML = 'NAMAJAJAA';
+      var a = document.getElementById('js-h1');
+      console.log(a.classList);
+      console.log(a.className);
+      if (a.className.includes('container')) {
+        replace(a);
+      }
+
+      function replace(a) {
+        a.classList.remove('container');
+        a.classList.add('hello');
+      }
+    }
+  </script>
+</body>
+
+</html>
