@@ -8,21 +8,20 @@ $(document).ready(function() {
         $(thead).appendTo('#js-table');
         var tr = '<tr id="js-tr-head"></tr>';
         $(tr).appendTo('#js-thead');
-        var th =
-          '<th scope="col">#</th><th scope="col">Name</th><th scope="col">Email</th>';
+        var th = '<th >#</th><th >Name</th><th>Email</th>';
         $(th).appendTo('#js-tr-head');
+
         var tbody = ' <tbody></tbody>';
         $('#js-thead').after(tbody);
-
         var users = data.users;
         users.forEach(function(user, index) {
           var trBody = '<tr id="js-tr-body-' + index + '"></tr>';
           $(trBody).appendTo('tbody');
-          var thBody = ' <th scope="row">' + user.id + '</th>';
+          var so = index + 1;
+          var thBody = ' <th scope="row">' + so + '</th>';
           var tdBody = '<td>' + user.name + '</td><td>' + user.email + '</td>';
           $('#js-tr-body-' + index).append(thBody, tdBody);
         });
-
         $('#js-button').hide();
       }
     });
