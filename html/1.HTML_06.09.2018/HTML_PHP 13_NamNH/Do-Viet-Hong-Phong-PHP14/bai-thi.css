@@ -1,0 +1,26 @@
+a{
+    color: gray;
+}
+
+.card-img-overlay {
+    top: auto;
+}
+.Card__Image {
+background-image: url(https://picsum.photos/200/260);
+}
+
+.Card__Image--Second {
+    background-image: url(https://picsum.photos/400/250);
+}
+.Card__Image--Third{
+    background-image: url(https://picsum.photos/300/300);
+    height: 200px;
+}
+.Card__Image--Four {
+    background-image: url(https://picsum.photos/400/400);
+    height: 200px;
+}
+.Card__Image--Style {
+    background-position: center;
+    background-size: cover;
+}

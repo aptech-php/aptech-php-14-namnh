@@ -1,0 +1,12 @@
+.News__Image {
+    height: 150px;
+    background-position: center;
+    background-size: cover;
+    filter: brightness(50%);
+}
+.News__Image--first {
+    background: url('../images/1.jpg');
+}
+.News__Image--second {
+    background: url('img/2.jpg');
+}

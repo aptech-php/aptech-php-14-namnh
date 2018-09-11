@@ -1,0 +1,57 @@
+.Img-1 {
+  background-image: url("img/img-1.jpeg");
+}
+
+.Img-2 {
+  background-image: url("img/img-2.jpeg");
+}
+
+.Img-3 {
+  background-image: url("img/img-3.jpeg");
+}
+
+.Img-4 {
+  background-image: url("img/img-4.jpeg");
+}
+
+.Img-5 {
+  background-image: url("img/img-5.jpeg");
+}
+
+.Img-6 {
+  background-image: url("img/img-6.jpeg");
+}
+
+.Img-7 {
+  background-image: url("img/img-7.jpeg");
+}
+
+.Img-8 {
+  background-image: url("img/img-8.jpeg");
+}
+
+.Img-9 {
+  background-image: url("img/img-9.jpeg");
+}
+
+.Img-10 {
+  background-image: url("img/img-10.jpeg");
+}
+
+.Img-11 {
+  background-image: url("img/img-11.jpeg");
+}
+
+.Img-12 {
+  background-image: url("img/img-12.jpg");
+}
+
+.Img-height {
+  height: 150px;
+}
+
+.Img-new {
+  background-size: cover;
+  background-position: center;
+  filter: brightness(0.8);
+}
