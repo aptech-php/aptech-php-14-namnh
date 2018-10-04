@@ -40,7 +40,40 @@ class UserController extends Controller
     {
 
         //update
-        return $request->all();
+        //c1
+        $name = $request->name;
+        $email = $request->email;
 
+        $user = User::find($id);
+        $user->name = $name;
+        $user->email = $email;
+        $user->save();
+        // return view('users.show', ['user' => $user]);
+
+        //c2
+        // $user = User::find($id);
+        // $user->update([
+        //     'name' => $request->name,
+        //     'email' => $request->email,
+        // ]);
+        return redirect()->route('users.show', $user->id);
+
+    }
+
+    public function create()
+    {
+        return view('users.create');
+
+    }
+
+    public function store(Request $request)
+    {
+        User::create([
+            'name' => $request->name,
+            'email' => $request->email,
+            'password' => $request->password,
+        ]);
+
+        return redirect()->route('users.index');
     }
 }

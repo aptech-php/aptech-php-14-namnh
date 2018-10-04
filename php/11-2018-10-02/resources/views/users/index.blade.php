@@ -1,3 +1,10 @@
+@extends('layout.master')
+@section('content')
+
+<form action="{{route('users.create')}}">
+<button class="btn btn-lg btn-danger" type="submit">Create</button>
+</form>
+
 
 @foreach($users as $key=>$user)
 <div>{{$key+1}} - This is {{$user->name}}
@@ -14,9 +21,6 @@
 </form>
 
 
-
-
-
 <form action="{{route('users.destroy',$user->id)}}" method="POST">
 {{csrf_field()}}
 <input type="hidden" name="_method" value="delete">
@@ -30,3 +34,4 @@
 </div>
 
 @endforeach
+@endsection
