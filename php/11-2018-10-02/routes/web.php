@@ -33,3 +33,7 @@ Route::post('users/store', 'UserController@store')->name('users.store');
 // Route::resource('/users', 'UserController');
 
 // php artisan route:list
+Route::get('posts', 'PostController@index')->name('posts.index');
+Route::get('/posts/create', 'PostController@create')->name('posts.create');
+Route::get('posts/{id}', 'PostController@show')->name('posts.show');
+Route::post('posts/store', 'PostController@store')->name('posts.store');
