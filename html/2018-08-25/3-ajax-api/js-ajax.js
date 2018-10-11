@@ -8,7 +8,7 @@ function loadData() {
   };
   xhttp.open(
     'GET',
-    'http://localhost/aptech-php-demo/laravel/crud/public/api/v1/users',
+    'http://aptech-php-laravel-crud.herokuapp.com/api/v1/users',
     true
   );
   xhttp.send();

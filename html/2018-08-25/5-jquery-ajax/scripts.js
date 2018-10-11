@@ -1,6 +1,9 @@
 $(document).ready(function() {
   $('#js-button').click(function() {
-    $.get('data.json', function(data, status) {
+    $.get('http://aptech-php-laravel-crud.herokuapp.com/api/v1/users', function(
+      data,
+      status
+    ) {
       if (status === 'success') {
         var table = '<table id="js-table" class="table"></table>';
         $('#js-div-table').append(table);
