@@ -18,7 +18,7 @@ class CreateCategoryPostTable extends Migration
             $table->integer('category_id')->reference('id')->on('categories');
             $table->integer('post_id')->reference('id')->on('posts');
             $table->timestamps();
-            $table->unique('category_id', 'post_id');
+            $table->unique(['category_id', 'post_id']);
         });
     }
 
